@@ -21,7 +21,7 @@ console.log(frase.replace("Japão", "Brasil"));
 //Variações como toLowerCase()
 console.log(frase.toUpperCase());
 */
-
+/*
 //Agora aula sobre array e dicionário
 
 //cria o array (lista)
@@ -56,3 +56,36 @@ console.log(fruta.nome);
 console.log(fruta.cor);
 
 //obs podemos colocar o dicionário em uma lista simplesmente colocando entre [{}]
+*/
+
+// Condicionais, laços de repetição e date
+
+/*
+//var idade = 18
+var idade = prompt("Qual sua idade?");
+if(idade >= 18){
+    alert("maior de idade");
+}else{
+    alert("menor de idade")
+}
+*/
+
+// laços de repetição
+
+/*
+var count = 0;
+while(count <5){
+    console.log(count);
+    count++;
+}
+*/
+
+var count;
+for(count=0; count <=5; count++){
+   // alert(count);
+}
+
+// date
+var d = new Date();
+//exemplo de uso no alert
+alert(d.getHours());
