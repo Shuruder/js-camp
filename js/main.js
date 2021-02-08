@@ -94,9 +94,12 @@ alert(d.getHours());
 
 // Desenvovendo páginas - Funções
 
+
 function soma(n1,n2){
     return n1 + n2;
 }
+
+/*
 
 //validar no caso está como variavel global, dentro da função
 //ficaria como local
@@ -114,3 +117,36 @@ function validaIdade(idade){
 var idade = prompt("Qual sua idade");
 validaIdade(idade)
 console.log(validar);
+
+*/
+
+function clicou(){
+    //alert("Obrigado por clicar!");
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar</b>";
+
+}
+
+function redirecionar(){
+    //abre nova janela
+    //window.open("https://www.google.com/");
+
+    //abre na mesma janela
+    window.location.href = "https://www.google.com/";
+}
+
+function trocar(elemento){
+    elemento.innerHTML = "Obrigado por passar o Mouse!";
+    //alert("trocar texto");
+}
+
+function voltar(elemento) {
+    elemento.innerHTML = "Passe o Mouse aqui";
+}
+
+function load(){
+    alert("Página carregada");
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value)
+}
