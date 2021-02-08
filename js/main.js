@@ -80,6 +80,7 @@ while(count <5){
 }
 */
 
+/*
 var count;
 for(count=0; count <=5; count++){
    // alert(count);
@@ -89,3 +90,27 @@ for(count=0; count <=5; count++){
 var d = new Date();
 //exemplo de uso no alert
 alert(d.getHours());
+*/
+
+// Desenvovendo páginas - Funções
+
+function soma(n1,n2){
+    return n1 + n2;
+}
+
+//validar no caso está como variavel global, dentro da função
+//ficaria como local
+var validar = 0;
+function validaIdade(idade){
+    validar;
+    if (idade >= 18){
+        validar = true
+    }else{
+        validar = false
+    }
+    return validar;
+}
+
+var idade = prompt("Qual sua idade");
+validaIdade(idade)
+console.log(validar);
